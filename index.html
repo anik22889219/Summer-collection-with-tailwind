@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>summer commers</title>
+    <!-- parsonel stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- link-fontawesome -->
+    <script src="https://kit.fontawesome.com/06bc006c55.js" crossorigin="anonymous"></script>
     <!-- link tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -13,6 +17,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        buynow: '#2F2E41',
+                        textcolor: '#7A72FF',
                     }
                 }
             }
@@ -23,8 +29,78 @@
 </head>
 
 <body>
-    <h1 class="uppercase">hiiiiiiiiiiiiii</h1>
-    <h3>lollllllllll</h3>
+    <!-- header  -->
+    <header>
+        <!-- navber -->
+        <nav class="container px-16 py-10 sticky top-0 ">
+            <div class=" flex justify-items-center justify-between">
+                <div class="">
+                    <h1 class="text-black text-base md:text-3xl font-bold uppercase">
+                        summer-collection
+                    </h1>
+                </div>
+
+                <button
+                    class="searchbox w-20 md:w-44 h-8 md:h-11 rounded-2xl px-5 md:px-7 py-1 md:py-3 flex justify-items-center shadow-red-900 bg-white hover:bg-textcolor hover:text-white  ring-2 ">
+
+                    <span>
+                        <i class="fa-solid fa-magnifying-glass "></i>
+                    </span>
+                    <span>
+                        <input class="hidden  md:inline-flex  bg-transparent font-semibold capitalize text-black ps-1"
+                            type="search" placeholder="search" value="">
+                    </span>
+
+                </button>
+            </div>
+        </nav>
+        <!-- album -->
+        <section class="container px-10 sm:px-20 py-16">
+            <div class="grid grid-cols-1 sm:grid-cols-2 justify-items-center  items-center gap-20">
+                <div>
+                    <img src="img/undraw_add_color_19gv.svg" alt="" srcset="">
+                </div>
+                <div>
+                    <h1 class="text-3xl sm:text-6xl font-bold uppercase text-black leter-style  ">
+                        su<span class="text-textcolor">mm</span>er
+                    </h1>
+                    <h1 class="text-3xl sm:text-6xl font-bold uppercase text-black word-spacing pb-6">
+                        collect <span class="text-textcolor">ion</span>
+                    </h1>
+                    <button class="w-44 h-14 py-3 px-10 hover:bg-textcolor bg-buynow hover:shadow-2xl rounded-2xl  ">
+                        <span>
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </span>
+                        <span class="uppercase text-white text-center text-sm font-semibold">
+                            buy now
+                        </span>
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- meadiea zoon -->
+        <div
+            class=" w-12 py-6 rounded-3xl shadow-inner flex flex-col items-center justify-between gap-5 sm:gap-10 fixed top-40 left-1 sm:left-6 hover:shadow-2xl ">
+            <div class=""><i class="fa-brands fa-facebook hover:text-blue-900  fa-lg sm:fa-xl"></i></div>
+            <div class=""><i class="fa-brands fa-twitter hover:text-blue-900   fa-lg sm:fa-xl"></i></div>
+            <div class=""><i class="fa-brands fa-instagram hover:text-blue-900 fa-lg sm:fa-xl"></i></div>
+            <div class=""><i class="fa-brands fa-youtube hover:text-blue-900   fa-lg sm:fa-xl"></i></div>
+
+        </div>
+
+
+    </header>
+    <!-- main  -->
+    <main>
+
+    </main>
+    <!-- footer -->
+    <footer>
+
+    </footer>
+
 </body>
 
 </html>

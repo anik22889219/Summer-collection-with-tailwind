@@ -1,0 +1,28 @@
+.searchbox {}
+
+.searchbox input {
+    border: none;
+    outline: none;
+    width: 100px;
+    /* font-weight: 400; */
+}
+
+.searchbox input::placeholder {
+    color: rgba(0, 0, 0, 0.658);
+}
+
+.searchbox:hover input::placeholder {
+    color: white;
+
+}
+
+
+.leter-style {
+    letter-spacing: 28px;
+
+}
+
+.word-spacing {
+    word-spacing: 40px;
+
+}
