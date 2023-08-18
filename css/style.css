@@ -4,7 +4,7 @@
     border: none;
     outline: none;
     width: 100px;
-    /* font-weight: 400; */
+
 }
 
 .searchbox input::placeholder {
@@ -38,4 +38,11 @@
 
 .batton {
     visibility: hidden;
+}
+
+.mail-box input {
+
+    border: none;
+    outline: none;
+    width: 60%;
 }
