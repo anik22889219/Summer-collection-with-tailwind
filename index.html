@@ -19,6 +19,8 @@
                         clifford: '#da373d',
                         buynow: '#2F2E41',
                         textcolor: '#7A72FF',
+                        bodycolor: '#FFFFFF',
+                        cardp: '#4D4D4D70',
                     }
                 }
             }
@@ -28,11 +30,11 @@
 
 </head>
 
-<body>
+<body class="bg-bodycolor">
     <!-- header  -->
     <header>
         <!-- navber -->
-        <nav class="container px-16 py-10 sticky top-0 ">
+        <nav class="container px-16 py-10 relative ">
             <div class=" flex justify-items-center justify-between">
                 <div class="">
                     <h1 class="text-black text-base md:text-3xl font-bold uppercase">
@@ -41,7 +43,7 @@
                 </div>
 
                 <button
-                    class="searchbox w-20 md:w-44 h-8 md:h-11 rounded-2xl px-5 md:px-7 py-1 md:py-3 flex justify-items-center shadow-red-900 bg-white hover:bg-textcolor hover:text-white  ring-2 ">
+                    class="searchbox fixed right-16 w-20 md:w-44 h-8 md:h-11 rounded-2xl px-5 md:px-7 py-1 md:py-3 flex justify-items-center shadow-red-900 bg-white hover:bg-textcolor hover:text-white  ring-2 ">
 
                     <span>
                         <i class="fa-solid fa-magnifying-glass "></i>
@@ -82,18 +84,200 @@
         </section>
         <!-- meadiea zoon -->
         <div
-            class=" w-12 py-6 rounded-3xl shadow-inner flex flex-col items-center justify-between gap-5 sm:gap-10 fixed top-40 left-1 sm:left-6 hover:shadow-2xl ">
-            <div class=""><i class="fa-brands fa-facebook hover:text-blue-900  fa-lg sm:fa-xl"></i></div>
-            <div class=""><i class="fa-brands fa-twitter hover:text-blue-900   fa-lg sm:fa-xl"></i></div>
-            <div class=""><i class="fa-brands fa-instagram hover:text-blue-900 fa-lg sm:fa-xl"></i></div>
-            <div class=""><i class="fa-brands fa-youtube hover:text-blue-900   fa-lg sm:fa-xl"></i></div>
+            class=" w-12 py-6 rounded-3xl shadow-inner flex flex-col items-center justify-between gap-5 sm:gap-10 fixed top-40 left-1 sm:left-6 hover:shadow-2xl hover:bg-textcolor bg-blue-200 hover:text-white ">
+            <div class=""><i class="fa-brands fa-facebook hover:text-blue-400  fa-lg sm:fa-xl"></i></div>
+            <div class=""><i class="fa-brands fa-twitter hover:text-blue-700  fa-lg sm:fa-xl"></i></div>
+            <div class=""><i class="fa-brands fa-instagram hover:text-orange-500 fa-lg sm:fa-xl"></i></div>
+            <div class=""><i class="fa-brands fa-youtube hover:text-red-600   fa-lg sm:fa-xl"></i></div>
 
         </div>
-
-
     </header>
     <!-- main  -->
     <main>
+        <!-- cards -->
+        <section class="container px-10 sm:px-20 py-16 bg-slate-300">
+            <h1 class="capitalize text-center text-2xl font-bold word-spacing-tittel">
+                New <span class="text-textcolor">Bags</span> Collection
+            </h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pt-11">
+                <!-- card-1 -->
+                <div class="card h-96 hover:h-full px-7 py-14 rounded-3xl  hover:bg-blue-100 shadow-2xl
+                relative hover:border-textcolor hover:border-4">
+                    <div class="">
+                        <img src="img/undraw_shopping_app_flsj.svg" alt="" srcset="">
+                        <p class="text-xs font-normal">Black Genuine Leather Bags.
+                        </p>
+                        <h1 class="text-3xl text-textcolor font-semibold">
+                            $23.3
+                        </h1>
+                        <p class=" batton text-xs font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Error,
+                            odio fuga! Beatae rem
+                            recusandae architecto.</p>
+                    </div>
+                    <div class="flex flex-row justify-center  batton mt-4">
+
+                        <button
+                            class="w-48 h-14 py-2 px-7 hover:bg-textcolor bg-buynow hover:shadow-2xl rounded-2xl text-white ">
+                            <span>
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </span>
+                            <span class="capitalize text-white text-center text-sm font-semibold">
+                                add too cart
+                            </span>
+                        </button>
+                    </div>
+
+                </div>
+                <!-- card-2 -->
+                <div class="card h-96  hover:h-full px-7 py-14 rounded-3xl  hover:bg-blue-100 shadow-2xl
+                relative hover:border-textcolor hover:border-4">
+                    <div class="">
+                        <img src="img/undraw_shopping_app_flsj.svg" alt="" srcset="">
+                        <p class="text-xs font-normal">Black Genuine Leather Bags.
+                        </p>
+                        <h1 class="text-3xl text-textcolor font-semibold">
+                            $23.3
+                        </h1>
+                        <p class=" batton text-xs font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Error,
+                            odio fuga! Beatae rem
+                            recusandae architecto.</p>
+                    </div>
+                    <div class="flex flex-row justify-center  batton mt-4">
+
+                        <button
+                            class="w-48 h-14 py-2 px-7 hover:bg-textcolor bg-buynow hover:shadow-2xl rounded-2xl text-white ">
+                            <span>
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </span>
+                            <span class="capitalize text-white text-center text-sm font-semibold">
+                                add too cart
+                            </span>
+                        </button>
+                    </div>
+
+                </div>
+                <!-- card-3 -->
+                <div class="card h-96  hover:h-full px-7 py-14 rounded-3xl  hover:bg-blue-100 shadow-2xl
+                relative hover:border-textcolor hover:border-4">
+                    <div class="">
+                        <img src="img/undraw_shopping_app_flsj.svg" alt="" srcset="">
+                        <p class="text-xs font-normal">Black Genuine Leather Bags.
+                        </p>
+                        <h1 class="text-3xl text-textcolor font-semibold">
+                            $23.3
+                        </h1>
+                        <p class=" batton text-xs font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Error,
+                            odio fuga! Beatae rem
+                            recusandae architecto.</p>
+                    </div>
+                    <div class="flex flex-row justify-center  batton mt-4">
+
+                        <button
+                            class="w-48 h-14 py-2 px-7 hover:bg-textcolor bg-buynow hover:shadow-2xl rounded-2xl text-white ">
+                            <span>
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </span>
+                            <span class="capitalize text-white text-center text-sm font-semibold">
+                                add too cart
+                            </span>
+                        </button>
+                    </div>
+
+                </div>
+                <!-- card-4 -->
+                <div class="card h-96  hover:h-full px-7 py-14 rounded-3xl  hover:bg-blue-100 shadow-2xl
+                relative hover:border-textcolor hover:border-4">
+                    <div class="">
+                        <img src="img/undraw_shopping_app_flsj.svg" alt="" srcset="">
+                        <p class="text-xs font-normal">Black Genuine Leather Bags.
+                        </p>
+                        <h1 class="text-3xl text-textcolor font-semibold">
+                            $23.3
+                        </h1>
+                        <p class=" batton text-xs font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Error,
+                            odio fuga! Beatae rem
+                            recusandae architecto.</p>
+                    </div>
+                    <div class="flex flex-row justify-center  batton mt-4">
+
+                        <button
+                            class="w-48 h-14 py-2 px-7 hover:bg-textcolor bg-buynow hover:shadow-2xl rounded-2xl text-white ">
+                            <span>
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </span>
+                            <span class="capitalize text-white text-center text-sm font-semibold">
+                                add too cart
+                            </span>
+                        </button>
+                    </div>
+
+                </div>
+                <!-- card-5 -->
+                <div class="card h-96  hover:h-full px-7 py-14 rounded-3xl  hover:bg-blue-100 shadow-2xl
+                relative hover:border-textcolor hover:border-4">
+                    <div class="">
+                        <img src="img/undraw_shopping_app_flsj.svg" alt="" srcset="">
+                        <p class="text-xs font-normal">Black Genuine Leather Bags.
+                        </p>
+                        <h1 class="text-3xl text-textcolor font-semibold">
+                            $23.3
+                        </h1>
+                        <p class=" batton text-xs font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Error,
+                            odio fuga! Beatae rem
+                            recusandae architecto.</p>
+                    </div>
+                    <div class="flex flex-row justify-center  batton mt-4">
+
+                        <button
+                            class="w-48 h-14 py-2 px-7 hover:bg-textcolor bg-buynow hover:shadow-2xl rounded-2xl text-white ">
+                            <span>
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </span>
+                            <span class="capitalize text-white text-center text-sm font-semibold">
+                                add too cart
+                            </span>
+                        </button>
+                    </div>
+
+                </div>
+                <!-- card-6 -->
+                <div class="card h-96  hover:h-full px-7 py-14 rounded-3xl  hover:bg-blue-100 shadow-2xl
+                relative hover:border-textcolor hover:border-4">
+                    <div class="">
+                        <img src="img/undraw_shopping_app_flsj.svg" alt="" srcset="">
+                        <p class="text-xs font-normal">Black Genuine Leather Bags.
+                        </p>
+                        <h1 class="text-3xl text-textcolor font-semibold">
+                            $23.3
+                        </h1>
+                        <p class=" batton text-xs font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Error,
+                            odio fuga! Beatae rem
+                            recusandae architecto.</p>
+                    </div>
+                    <div class="flex flex-row justify-center  batton mt-4">
+
+                        <button
+                            class="w-48 h-14 py-2 px-7 hover:bg-textcolor bg-buynow hover:shadow-2xl rounded-2xl text-white ">
+                            <span>
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </span>
+                            <span class="capitalize text-white text-center text-sm font-semibold">
+                                add too cart
+                            </span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
 
     </main>
     <!-- footer -->
